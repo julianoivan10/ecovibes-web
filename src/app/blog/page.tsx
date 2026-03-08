@@ -164,53 +164,6 @@ export default function BlogList() {
         </section>
 
       </main>
-
-      {/* FOOTER */}
-      <footer className="bg-gray-900 text-white pt-16 pb-8 mt-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-12">
-            <div className="col-span-1 md:col-span-2">
-              <span className="text-2xl font-bold tracking-tight block mb-4">EcoVibes.</span>
-              <p className="text-gray-400 mb-6 max-w-sm font-medium text-sm leading-relaxed">
-                Membangun masa depan yang berkelanjutan melalui inovasi Munchware. Mulai langkah kecilmu hari ini.
-              </p>
-              <div className="flex space-x-3">
-                <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-emerald-600 hover:-translate-y-1 transition-all"><Instagram className="w-4 h-4" /></a>
-                <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-emerald-600 hover:-translate-y-1 transition-all"><Twitter className="w-4 h-4" /></a>
-                <a href="#" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-emerald-600 hover:-translate-y-1 transition-all"><Linkedin className="w-4 h-4" /></a>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="font-bold mb-4 uppercase tracking-wider text-xs text-gray-400">Navigasi</h3>
-              <ul className="space-y-3 text-sm font-medium text-gray-400">
-                <li><Link href="/" className="hover:text-emerald-400 hover:translate-x-1 inline-block transition-all">Beranda</Link></li>
-                <li><a href="/#tentang" className="hover:text-emerald-400 hover:translate-x-1 inline-block transition-all">Tentang Kami</a></li>
-                <li><a href="/#kemitraan" className="hover:text-emerald-400 hover:translate-x-1 inline-block transition-all">Kemitraan</a></li>
-                <li><Link href="/blog" className="hover:text-emerald-400 hover:translate-x-1 inline-block transition-all">Blog & Artikel</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-bold mb-4 uppercase tracking-wider text-xs text-gray-400">Hubungi Kami</h3>
-              <ul className="space-y-3 text-sm font-medium text-gray-400">
-                <li className="flex items-center gap-2 hover:text-emerald-400 transition-colors cursor-pointer">
-                  <Mail className="w-4 h-4 shrink-0" /> hello@ecovibes.id
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between text-xs font-medium text-gray-500">
-            <p>© 2026 EcoVibes Team. All rights reserved.</p>
-            <div className="flex gap-4 mt-4 md:mt-0">
-              <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-gray-300 transition-colors">Terms of Service</a>
-            </div>
-          </div>
-        </div>
-      </footer>
-
     </div>
   );
 }

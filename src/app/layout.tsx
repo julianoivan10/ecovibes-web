@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google"; // Font yang lebih modern dari Inter
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Toaster } from 'sonner';
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Toaster position="bottom-center" richColors />
         <ScrollToTop />
+        <Footer />
       </body>
     </html>
   );
