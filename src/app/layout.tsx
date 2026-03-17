@@ -5,6 +5,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Toaster } from 'sonner';
+import ConvexClientProvider from "@/components/ConvexClientProvider";
+import NavigationWrapper from "@/components/NavigationWrapper";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -21,11 +24,14 @@ export default function RootLayout({
   return (
     <html lang="id" className="scroll-smooth" data-scroll-behavior="smooth">
       <body className={`${jakarta.className} bg-[#FAFAFA] text-gray-800 antialiased relative`}>
-        <Navbar />
-        <main>{children}</main>
-        <Toaster position="bottom-center" richColors />
-        <ScrollToTop />
-        <Footer />
+        <ClerkProvider>
+          <ConvexClientProvider>
+            <NavigationWrapper>
+              {children}
+            </NavigationWrapper>
+            <Toaster position="top-center" richColors />
+          </ConvexClientProvider>
+        </ClerkProvider>
       </body>
     </html>
   );

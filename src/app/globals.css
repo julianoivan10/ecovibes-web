@@ -24,3 +24,52 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Styling khusus untuk Rich Text Editor */
+.rich-text-container b, .rich-text-container strong { font-weight: 800; color: #111827; }
+.rich-text-container i, .rich-text-container em { font-style: italic; }
+.rich-text-container u { text-decoration: underline; }
+.rich-text-container a { color: #059669; text-decoration: underline; font-weight: 600; }
+.rich-text-container p { margin-bottom: 0.75rem; }
+
+/* Styling Khusus React Quill agar teks terlihat dan rapi */
+.ql-editor {
+  color: #111827 !important; /* Memaksa teks menjadi abu-abu sangat gelap / hitam */
+  font-size: 1rem !important;
+  font-family: inherit !important;
+  min-height: 120px;
+}
+.ql-editor.ql-blank::before {
+  color: #9CA3AF !important; /* Warna placeholder */
+  font-style: normal !important;
+}
+.ql-toolbar.ql-snow {
+  border: none !important;
+  border-bottom: 1px solid #E5E7EB !important;
+  background-color: #F9FAFB;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.ql-container.ql-snow {
+  border: none !important;
+}
+
+/* Styling khusus untuk Rich Text Container (React Quill output) */
+.rich-text-container ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.rich-text-container ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.rich-text-container li {
+  margin-bottom: 0.5rem;
+  display: list-item;
+}
+/* Menambahkan jarak antar list agar lebih rapi */
+.rich-text-container li p {
+  display: inline;
+}
